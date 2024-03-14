@@ -65,8 +65,7 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
@@ -95,7 +94,7 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-Libro* inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
+/*Libro* inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
   Libro* nuevo_libro= (Libro *) malloc(sizeof(Libro));
   strcpy(nuevo_libro->titulo, titulo);
   nuevo_libro->anioPublicacion = anioPublicacion;
@@ -106,7 +105,7 @@ Libro* inicializarLibro(Libro *libro, const char *titulo, const char *nombreAuto
   nuevo_libro->autor->anioNacimiento = anioNacimiento;
   return nuevo_libro;
   
-}
+}*/
 
 /*
 Ejercicio 7: Lista enlazada de números

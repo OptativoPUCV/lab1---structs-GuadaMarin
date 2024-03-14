@@ -235,3 +235,13 @@ exercises.c:102:10: error: unused variable ‘nuevo_autor’ [-Werror=unused-var
 cc1: all warnings being treated as errors
 Compilation failed
 c67ff3f
+Thu 14 Mar 2024 09:19:18 PM UTC: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+test.c: In function ‘test_biblioteca’:
+test.c:306:5: error: implicit declaration of function ‘inicializarLibro’ [-Werror=implicit-function-declaration]
+  306 |     inicializarLibro(&libro, titulos[i], autores[i], aniosNacimiento[i],
+      |     ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+01cba33
