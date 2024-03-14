@@ -118,3 +118,23 @@ exercises.c:51:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 7348571
+Thu 14 Mar 2024 08:51:02 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:23: error: expected statement before ‘)’ token
+   48 |       if(newArr==NULL))return EXIT_FAILURE;
+      |                       ^
+exercises.c:48:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   48 |       if(newArr==NULL))return EXIT_FAILURE;
+      |       ^~
+exercises.c:48:24: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   48 |       if(newArr==NULL))return EXIT_FAILURE;
+      |                        ^~~~~~
+exercises.c:48:31: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   48 |       if(newArr==NULL))return EXIT_FAILURE;
+      |                               ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+935410a

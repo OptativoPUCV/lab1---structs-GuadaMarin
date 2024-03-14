@@ -45,10 +45,11 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     if(arr[i]%2==0){
       *newSize= *newSize+1;
       newArr=(int*)realloc(newArr, (*newSize)* sizeof(int));
+      if(newArr==NULL))return EXIT_FAILURE;
       newArr[*newSize-1]= arr[i];
     }
   }
-  return *newArr;
+  return newArr;
 }
 
 /*
