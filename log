@@ -90,3 +90,14 @@ exercises.c:46:14: error: assignment to ‘int’ from ‘int *’ makes integer
 cc1: all warnings being treated as errors
 Compilation failed
 ed38766
+Thu 14 Mar 2024 08:47:12 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:14: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   47 |       *newArr=(int*) realloc(newArr, (*newSize)*sizeof(int));
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+342fd16
