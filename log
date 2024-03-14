@@ -173,3 +173,19 @@ Thu 14 Mar 2024 09:00:54 PM UTC:
  tests:  0|5
 total_score: 20/70
 4ff923a
+Thu 14 Mar 2024 09:10:46 PM UTC: 
+ exercises.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:102:23: error: incompatible types when assigning to type ‘Autor’ from type ‘Autor *’
+  102 |   nuevo_libro->autor= (Autor*) malloc(sizeof(Autor));
+      |                       ^
+exercises.c:103:28: error: invalid type argument of ‘->’ (have ‘Autor’)
+  103 |   strcpy(nuevo_libro->autor->nombre, nombreAutor);
+      |                            ^~
+exercises.c:104:21: error: invalid type argument of ‘->’ (have ‘Autor’)
+  104 |   nuevo_libro->autor->anioNacimiento = anioNacimiento;
+      |                     ^~
+Compilation failed
+986e6db
