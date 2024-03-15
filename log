@@ -309,3 +309,9 @@ test.c:306:5: error: implicit declaration of function ‘inicializarLibro’ [-W
 cc1: all warnings being treated as errors
 Compilation failed
 c68fc4b
+Fri 15 Mar 2024 03:57:37 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|4
+total_score: 30/70
+6fad089

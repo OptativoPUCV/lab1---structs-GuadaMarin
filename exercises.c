@@ -97,7 +97,8 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-/*Libro* inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {}
+  /*{
   Libro* nuevo_libro= (Libro *) malloc(sizeof(Libro));
   strcpy(nuevo_libro->titulo, titulo);
   nuevo_libro->anioPublicacion = anioPublicacion;
