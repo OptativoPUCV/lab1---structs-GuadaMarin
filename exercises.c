@@ -102,7 +102,7 @@ Libro* inicializarLibro(Libro *libro, const char *titulo, const char *nombreAuto
   Libro* nuevo_libro= (Libro *) malloc(sizeof(Libro));
   strcpy(nuevo_libro->titulo, titulo);
   nuevo_libro->anioPublicacion = anioPublicacion;
-  strcpy(nuevo_libro-> Autor.nombre, nombreAutor);
+  strcpy(nuevo_libro-> autor.nombre, nombreAutor);
 
   nuevo_libro->autor.anioNacimiento = anioNacimiento;
   return nuevo_libro;  
