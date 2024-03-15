@@ -332,3 +332,14 @@ exercises.c:105:10: error: unused variable ‘nuevo_autor’ [-Werror=unused-var
 cc1: all warnings being treated as errors
 Compilation failed
 d4a4675
+Fri 15 Mar 2024 04:21:17 PM UTC: 
+ exercises.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:105:24: error: ‘Libro’ has no member named ‘Autor’; did you mean ‘autor’?
+  105 |   strcpy(nuevo_libro-> Autor.nombre, nombreAutor);
+      |                        ^~~~~
+      |                        autor
+Compilation failed
+36aa77f
