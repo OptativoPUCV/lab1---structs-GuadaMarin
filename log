@@ -299,3 +299,13 @@ test.c:306:5: error: implicit declaration of function ‘inicializarLibro’ [-W
 cc1: all warnings being treated as errors
 Compilation failed
 1bbded3
+Fri 15 Mar 2024 03:55:04 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+test.c: In function ‘test_biblioteca’:
+test.c:306:5: error: implicit declaration of function ‘inicializarLibro’ [-Werror=implicit-function-declaration]
+  306 |     inicializarLibro(&libro, titulos[i], autores[i], aniosNacimiento[i],
+      |     ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c68fc4b
