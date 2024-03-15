@@ -245,3 +245,28 @@ test.c:306:5: error: implicit declaration of function ‘inicializarLibro’ [-W
 cc1: all warnings being treated as errors
 Compilation failed
 01cba33
+Fri 15 Mar 2024 03:34:08 PM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:30:16: error: expected identifier or ‘(’ before ‘int’
+   30 |   for(int i=0, int j=size-1 ; i<size/2  && j> size/2 ; i++, j--){
+      |                ^~~
+exercises.c:30:44: error: ‘j’ undeclared (first use in this function)
+   30 |   for(int i=0, int j=size-1 ; i<size/2  && j> size/2 ; i++, j--){
+      |                                            ^
+exercises.c:30:44: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:29:7: error: unused variable ‘temp’ [-Werror=unused-variable]
+   29 |   int temp =size-1;
+      |       ^~~~
+exercises.c:28:7: error: unused variable ‘aux’ [-Werror=unused-variable]
+   28 |   int aux[size];
+      |       ^~~
+test.c: In function ‘test_biblioteca’:
+test.c:306:5: error: implicit declaration of function ‘inicializarLibro’ [-Werror=implicit-function-declaration]
+  306 |     inicializarLibro(&libro, titulos[i], autores[i], aniosNacimiento[i],
+      |     ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e3a6367
