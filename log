@@ -349,3 +349,14 @@ Fri 15 Mar 2024 04:21:31 PM UTC:
  tests:  0|4
 total_score: 30/70
 6fe731f
+Sat 16 Mar 2024 12:35:28 AM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:86:10: error: returning ‘int *’ from a function with return type ‘int’ makes integer from pointer without a cast [-Werror=int-conversion]
+   86 |   return newArr;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a7c5c54

@@ -68,7 +68,23 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {}
+int mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
+  int newSize= size1+size2;
+  int *newArr= (int*) malloc(newSize* sizeof(int));
+  int copy= newSize -1;
+  int i=0;
+  int j=0;
+  while( copy !=0){
+    newArr[i]= arr1[i];
+    if(i== (size1-1)){
+      newArr[i]=arr2[j];
+      j++;
+    }
+    copy--;
+    i++;
+  }
+  return newArr;
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
