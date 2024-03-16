@@ -398,3 +398,20 @@ exercises.c:159:25: error: assignment to ‘struct nodo *’ from ‘int’ make
 cc1: all warnings being treated as errors
 Compilation failed
 be17f03
+Sat 16 Mar 2024 09:43:12 PM UTC: 
+ exercises.c | 27 +++++++++++++--------------
+ 1 file changed, 13 insertions(+), 14 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:109:17: error: statement with no effect [-Werror=unused-value]
+  109 |     else(arr[i] > arr[i+1])
+      |         ~~~~~~~~^~~~~~~~~~~
+exercises.c:109:28: error: expected ‘;’ before ‘cont2’
+  109 |     else(arr[i] > arr[i+1])
+      |                            ^
+      |                            ;
+  110 |       cont2++;
+      |       ~~~~~                 
+cc1: all warnings being treated as errors
+Compilation failed
+8a703dc

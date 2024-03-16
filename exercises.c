@@ -101,7 +101,18 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size) { 
+  int cont1=0, cont2=0;
+  for (int i=0; i<size; i++){
+    if(arr[i] < arr[i+1])
+      cont1++;
+    else(arr[i] > arr[i+1])
+      cont2++;
+  }
+  if(cont1==size-1)return 1;
+  if(cont2==size-1)return -1;
+  else return 0;
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
@@ -149,16 +160,4 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) {
-  if (size == 0) return NULL;
-
-  Nodo *cabeza = nuevoNodo(arr[0]);
-  Nodo *actual = cabeza;
-
-  for (int i = 1; i < size; i++) {
-      actual->siguiente = nuevoNodo(arr[i]);
-      actual = actual->siguiente;
-  }
-
-  return cabeza;
-}
+Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
